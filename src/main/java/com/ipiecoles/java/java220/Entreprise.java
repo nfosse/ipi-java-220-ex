@@ -11,6 +11,7 @@ public class Entreprise {
 
     public static double primeAnnuelleBase() {
         double currentYear = LocalDate.now().getYear();
-        return currentYear / 2;
+
+        return currentYear / 2d;
     }
 }
