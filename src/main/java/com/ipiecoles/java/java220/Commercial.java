@@ -50,4 +50,20 @@ public class Commercial extends Employe {
             return false;
         }
     }
+
+    public Note equivalenceNote() {
+        switch (performance) {
+            case 0:
+            case 50:
+                return Note.INSUFFISANT;
+            case 100:
+                return Note.PASSABLE;
+            case 150:
+                return Note.BIEN;
+            case 200:
+                return Note.TRES_BIEN;
+            default:
+                return null;
+        }
+    }
 }
